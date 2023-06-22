@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PizzaParty</string>
+
+    // textview labels
+    <string name="num_people_label">Number of People?</string>
+    <string name="how_hungry_label">How Hungry?</string>
+    <string name="total_pizzas_needed_label">Total Pizzas Needed:</string>
+    <string name="cost_per_pizza_label">Cost Per Pizza:</string>
+    <string name="total_cost_label">Total Cost:</string>
+
+    // radiobutton labels
+    <string name="light_label">Light</string>
+    <string name="medium_label">Medium</string>
+    <string name="ravenous_label">Ravenous</string>
+
+    // button labels
+    <string name="calculate_button_label">Calculate!</string>
+    <string name="refresh_cost_button_label">Refresh Cost</string>
+
+    // hint
+    <string name="number_people_hint"># People </string>
+</resources>

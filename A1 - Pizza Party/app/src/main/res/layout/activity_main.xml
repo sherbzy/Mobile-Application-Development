@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+
+    // label for number of people
+    <TextView
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num_people_label"
+        android:layout_marginTop="8dp">
+    </TextView>
+
+    // edit text for number of people input
+    <EditText
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/number_of_people"
+        android:inputType="number"
+        android:maxLength="5"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/number_people_hint">
+    </EditText>
+
+    // label for how hungry
+    <TextView
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_hungry_label"
+        android:layout_marginTop="8dp">
+    </TextView>
+
+    // radio group to hold the how hungry radio buttons
+    <RadioGroup
+        android:id="@+id/how_hungry_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        // light radio button
+        <RadioButton
+            android:id="@+id/light_radio_button"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light_label"
+            android:padding="8dp">
+        </RadioButton>
+
+        // medium radio button
+        <RadioButton
+            android:id="@+id/medium_radio_button"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medium_label"
+            android:padding="8dp">
+        </RadioButton>
+
+        // ravenous radio button
+        <RadioButton
+            android:id="@+id/ravenous_radio_button"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ravenous_label"
+            android:padding="8dp">
+        </RadioButton>
+    </RadioGroup>
+
+    // calculate button
+    <Button
+        android:id="@+id/calculate_button"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/calculate_button_label"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp">
+    </Button>
+
+    // total pizzas needed
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        // total pizzas needed label
+        <TextView
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/total_pizzas_needed_label"
+            android:paddingRight="8dp">
+        </TextView>
+
+        // calculated pizzas label
+        <TextView
+            android:id="@+id/total_pizzas_needed"
+            android:textSize="24dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAlignment="viewEnd"
+            android:layout_weight="1">
+        </TextView>
+    </LinearLayout>
+
+    // cost per pizza
+    <LinearLayout
+        android:id="@+id/cost_per_pizza_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible">
+
+        // cost per pizza label
+        <TextView
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cost_per_pizza_label"
+            android:paddingRight="8dp"
+            android:layout_gravity="center_vertical">
+        </TextView>
+
+        // edit text for cost per pizza input
+        <EditText
+            android:textSize="24dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cost_per_pizza"
+            android:inputType="numberDecimal"
+            android:text="5.55"
+            android:textAlignment="viewEnd"
+            android:layout_weight="1">
+        </EditText>
+    </LinearLayout>
+
+    // refresh cost button
+    <Button
+        android:id="@+id/refresh_cost_button"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/refresh_cost_button_label"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:visibility="invisible">
+    </Button>
+
+    // total cost
+    <LinearLayout
+        android:id="@+id/total_cost_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        // total cost label
+        <TextView
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/total_cost_label"
+            android:paddingRight="8dp">
+        </TextView>
+
+        // total cost
+        <TextView
+            android:id="@+id/total_cost"
+            android:textSize="24dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:text="#"
+            android:textAlignment="viewEnd"
+            android:layout_weight="1">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
