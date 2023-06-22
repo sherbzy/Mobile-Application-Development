@@ -1,0 +1,2 @@
+com/csci448/lsherburne/A1/BuildConfig.java
+ com.csci448.lsherburne.A1.BuildConfig
